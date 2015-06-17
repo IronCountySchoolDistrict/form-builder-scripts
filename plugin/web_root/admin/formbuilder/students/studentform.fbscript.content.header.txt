@@ -1,0 +1,20 @@
+<script>
+	require.config({
+		paths: {
+	        fb: "fb-scripts/js"
+	    }
+	});
+</script>
+
+<script>
+    angular.element(document).ready(function() {
+        scope = angular.element(document).scope();
+        scope.$watch('formContent.title', function(title) {
+            if(title === 'IEP: SpEd 05 v.150501') {
+            	require(["fb/iep5"], function(iep5) {
+            		iep5.main();
+            	});
+            }
+        });
+    });
+</script>

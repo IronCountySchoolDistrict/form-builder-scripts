@@ -1,29 +1,19 @@
 {
-  "name": "iep-printing",
-  "version": "0.0.1",
-  "description": "plugin for powerschool for printing iep forms filled with student data",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^3.8.11",
-    "gulp-less": "^3.0.3",
-    "gulp-zip": "^3.0.2",
-    "gulp-debug": "^2.0.1",
-    "gulp-insert": "^0.4.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sftp": "^0.1.4",
-    "gulp-watch": "^4.2.4"
-  },
+  "name": "form-builder-scripts",
+  "version": "0.1.0",
+  "description": "Custom scripts for Form Builder",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha-casperjs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IronCountySchoolDistrict/IEP-Printing.git"
+    "url": "git+https://github.com/IronCountySchoolDistrict/form-builder-scripts.git"
   },
-  "author": "icsd",
-  "license": "ISC",
+  "author": "IronCountySchoolDistrict",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/IronCountySchoolDistrict/IEP-Printing/issues"
+    "url": "https://github.com/IronCountySchoolDistrict/form-builder-scripts"
   },
-  "homepage": "https://github.com/IronCountySchoolDistrict/IEP-Printing#readme"
+  "homepage": "https://github.com/IronCountySchoolDistrict/form-builder-scripts#readme"
 }
