@@ -1,18 +1,22 @@
 <script>
 	require.config({
 		paths: {
-	        fb: "fb-scripts/js"
+	        fb: "/scripts/form-builder-scripts/js"
 	    }
 	});
+</script>
+
+<script id="rem-chars-template" type="x-handlebars-template">
+	<div id="rem-chars" class="alerttext"></div>
 </script>
 
 <script>
     angular.element(document).ready(function() {
         scope = angular.element(document).scope();
         scope.$watch('formContent.title', function(title) {
-            if(title === 'IEP: SpEd 05 v.150501') {
-            	require(["fb/iep5"], function(iep5) {
-            		iep5.main();
+            if(title === 'IEP: SpEd 06bc') {
+            	require(["fb/iep06bc"], function(iep06bc) {
+            		iep06bc.main();
             	});
             }
         });
